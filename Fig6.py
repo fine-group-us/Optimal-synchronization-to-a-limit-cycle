@@ -78,6 +78,11 @@ for i in range(len(sftt)):
     if i != 1:
         ax2.plot(sftt[i],xfminf[i],'.',c = 'tab:blue', ms = 8)
         ax2.plot(sftt[i],xfminf[i],'s',c = colors[i],mfc = 'None', ms = 10)
+ax2.plot([174.7,174.7],[0.9,2.1],'k:')
+text = r'$s_f^*$'
+ax2.text(120,1.1,text,fontsize = 20)
+ax2.set_xlim(-10,1010)
+ax2.set_ylim(0.9,2.1)
 ax2.set_xlabel(r'$s_f$',fontsize=20)
 ax2.set_ylabel(r'$x_{1f}^{\mathrm{opt}}$',fontsize=20)
 ax2.tick_params(axis='both', which='major', direction = 'in',top=True, right=True, labeltop=False, labelright=False,labelsize=16)
